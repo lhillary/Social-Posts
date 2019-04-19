@@ -1,0 +1,17 @@
+.socialPosts {
+    position: relative;
+}
+
+.header {
+    background: #1F2667;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header > h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #01daf6;
+}

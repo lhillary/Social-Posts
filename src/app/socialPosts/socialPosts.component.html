@@ -1,0 +1,15 @@
+<div class="list-container">
+    <button (click)="popupInit()">New Thought +</button>
+    <post
+    *ngFor="let post of postList; let i = index"
+    [post]="post"
+    (deleted)="onDelete(i)">
+    </post>
+</div>
+<postForm
+    *ngIf="popUp"
+    [form]="formShow"
+    [popUp]="popUp"
+    (popUpChanged)="onClose()"
+    (submitted)="onSubmit($event)"
+></postForm>
