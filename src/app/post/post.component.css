@@ -12,11 +12,16 @@
     align-items: center;
 }
 
-i {
+.fa-times {
     position: absolute;
     top: 15px;
     right: 15px;
     color: #1F2667;
+}
+
+.fa-thumbs-up {
+    color: #1F2667;
+    margin-right: 10px;
 }
 
 h2 {
@@ -26,4 +31,8 @@ h2 {
 
 p {
     margin: 10px 0px;
+}
+
+.like {
+    margin-top: 20px;
 }

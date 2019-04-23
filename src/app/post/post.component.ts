@@ -9,9 +9,13 @@ import { Post } from '../postForm/postForm.component'
 
 export class PostComponent {
     title = 'Post Component Module';
+    count: number = 0;
     @Input() post: Post;
     @Output() deleted = new EventEmitter<boolean>();
     deleteAt = () => {
         this.deleted.emit(true);
+    }
+    addLikes = () => {
+        this.count += 1;
     }
 }

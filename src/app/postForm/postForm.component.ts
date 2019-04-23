@@ -24,7 +24,7 @@ export class PostFormComponent {
         this.popUpChanged.emit(true);
     }
     submit = (newTitle: string, newContent: string) => {
-        const post = { postTitle: newTitle, postContent: newContent };
+        const post = { postTitle: newTitle, postContent: newContent, likeCount: 0 };
         this.submitted.emit(post);
     }
 }

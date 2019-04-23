@@ -4,4 +4,8 @@
     <div class="content">
         <p>{{ post.postContent }}</p>
     </div>
+    <div class="like">
+        <i class="fas fa-thumbs-up" (click)="addLikes()"></i>
+        <span>{{ count }} Likes</span>
+    </div>
 </div>
