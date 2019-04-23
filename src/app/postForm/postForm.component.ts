@@ -2,7 +2,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 
 export interface Post {
     postTitle: string,
-    postContent: string
+    postContent: string,
+    postLikes: number
 }
 
 @Component({
@@ -24,7 +25,7 @@ export class PostFormComponent {
         this.popUpChanged.emit(true);
     }
     submit = (newTitle: string, newContent: string) => {
-        const post = { postTitle: newTitle, postContent: newContent, likeCount: 0 };
+        const post = { postTitle: newTitle, postContent: newContent, postLikes: 0 };
         this.submitted.emit(post);
     }
 }

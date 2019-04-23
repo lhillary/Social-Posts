@@ -3,7 +3,8 @@
     <post
     *ngFor="let post of postList; let i = index"
     [post]="post"
-    (deleted)="onDelete(i)">
+    (deleted)="onDelete(i)"
+    (liked)="onLike(i, $event)">
     </post>
 </div>
 <postForm

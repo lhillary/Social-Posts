@@ -12,10 +12,13 @@ export class PostComponent {
     count: number = 0;
     @Input() post: Post;
     @Output() deleted = new EventEmitter<boolean>();
+    @Output() liked = new EventEmitter<number>();
     deleteAt = () => {
         this.deleted.emit(true);
     }
     addLikes = () => {
         this.count += 1;
+        let likes = this.count;
+        this.liked.emit(likes);
     }
 }
