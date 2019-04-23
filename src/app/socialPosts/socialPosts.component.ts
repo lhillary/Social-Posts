@@ -34,6 +34,5 @@ export class SocialPostsComponent {
     }
     onLike = (i, $event) => {
         this.postList[i].postLikes = $event;
-        console.log(this.postList);
     }
 }
